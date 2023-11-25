@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.Test.BuyItems">
+        <methods>
+          <include name="checkProductAvailability"/>
+          <include name="addShippingAddress"/>
+          <include name="setUp"/>
+          <include name="checkOut"/>
+          <include name="viewOrder"/>
+          <include name="addPaymentMethod"/>
+          <include name="close"/>
+          <include name="searchItem"/>
+          <include name="addToCart"/>
+          <include name="placeOrder"/>
+          <include name="dowloadOrderInvoice"/>
+          <include name="openProductPage"/>
+        </methods>
+      </class> <!-- com.Test.BuyItems -->
+      <class name="com.Mysql.dbTesting">
+        <methods>
+          <include name="setUp"/>
+          <include name="findMostSoldProductByRegion"/>
+          <include name="createTable"/>
+          <include name="findMostSoldProduct"/>
+          <include name="findMaxPrice"/>
+          <include name="insertTable"/>
+          <include name="findDuplicateRecord"/>
+        </methods>
+      </class> <!-- com.Mysql.dbTesting -->
+      <class name="com.Test.LoginTest">
+        <methods>
+          <include name="loginHappyFlow"/>
+          <include name="invalidEmail"/>
+          <include name="invalidPassword"/>
+          <include name="nullPassword"/>
+          <include name="nullEmail"/>
+        </methods>
+      </class> <!-- com.Test.LoginTest -->
+      <class name="com.Test.RegistrationTest">
+        <methods>
+          <include name="registerHappyFlow"/>
+          <include name="nullPassword"/>
+          <include name="passwordLengthTest"/>
+          <include name="nullCustomerName"/>
+          <include name="invalidEmail"/>
+          <include name="existingEmail"/>
+          <include name="invalidMobileNumber"/>
+          <include name="registerPageNavigation"/>
+          <include name="nullMobileNumber"/>
+        </methods>
+      </class> <!-- com.Test.RegistrationTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
